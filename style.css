@@ -1,26 +1,46 @@
-<Html>
-	<head>
-		<title>LOST IN THE SOUND</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="style.css">
-		<title>AUDIO</title>
-	</head>
-	<body>
-		<div class="site">
-			<div class="cover">
-				<h1 class="title">LOST IN THE SOUND</h1>
-				<img src="music\IMG_20200328_183748711-02.jpeg" width="30%">
-			</div>
-			<div class="music" align="center">
-				<h2 class="musict">01 - LOST IN THE SOUND</h2>
-				<audio controls src="music\01 - Lost In The Sound.mp3" type="audio/mpeg" class="player"></audio>
-				<h2 class="musict">02 - HARD TIMES</h2>
-				<audio controls src="music\02 - Hard Time.mp3" type="audio/mpeg"></audio>
-				<h2 class="musict">03 - NORTHLESS</h2>
-				<audio controls src="music\03 - Over You (Complete).mp3" type="audio/mpeg"></audio>
-				<h2 class="musict">04 - NORTHLESS</h2>
-				<audio controls src="music\04 - Northless.mp3" type="audio/mpeg"></audio>
-			</div>
-		</div>
-	</body>
-</Html>
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+
+body{
+	background-color: darkgray;
+	color: black;
+	align-items: center;
+	width: 100%; 
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+}
+
+audio::-webkit-media-controls-panel {
+                background-color: gray;
+}
+
+.cover{
+	display: flex;
+	align-content: center;
+	align-items: center;
+	align-self: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.title{
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+
+.musict{
+	font-size: 15px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.site {
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
